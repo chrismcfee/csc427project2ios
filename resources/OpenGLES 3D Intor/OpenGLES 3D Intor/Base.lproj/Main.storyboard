@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D2134" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WDw-QD-5NG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--GLKit View Controller-->
+        <scene sceneID="uv3-vQ-3Yi">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="WDw-QD-5NG" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cdP-ps-4Ig"/>
+                        <viewControllerLayoutGuide type="bottom" id="WGg-af-nSj"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="Kfp-da-6Bc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mCK-lY-Jz6">
+                                <rect key="frame" x="8" y="28" width="359" height="417"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0U2-a1-mUw">
+                                    <rect key="frame" x="0.0" y="0.0" width="359" height="417"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xh6-2U-Cts">
+                                            <rect key="frame" x="0.0" y="0.0" width="359" height="44"/>
+                                            <items>
+                                                <navigationItem title="Pick Example" id="PHf-jj-Dzg"/>
+                                            </items>
+                                        </navigationBar>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoK-6p-mVD">
+                                            <rect key="frame" x="8" y="52" width="110" height="110"/>
+                                            <state key="normal" title="1 Matrix" backgroundImage="2-1.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="Vpt-IT-DnS" kind="show" id="DVL-CS-syP"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvW-dv-5gu">
+                                            <rect key="frame" x="126" y="52" width="110" height="110"/>
+                                            <state key="normal" title="2 ViewMatrix" backgroundImage="2-1.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="Vkc-wr-P1a" kind="show" id="kBg-t6-u8F"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgf-MA-QKV">
+                                            <rect key="frame" x="244" y="52" width="110" height="110"/>
+                                            <state key="normal" title="3 Projection" backgroundImage="2-1.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="YyC-3m-8xO" kind="show" id="Yj8-Ux-DYi"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Y3-vO-46Q">
+                                            <rect key="frame" x="8" y="170" width="110" height="110"/>
+                                            <state key="normal" title="4 Texture" backgroundImage="2-2.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="iqr-sr-cGy" kind="show" id="iCJ-OW-Bsm"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ur0-wX-dL4">
+                                            <rect key="frame" x="126" y="170" width="110" height="110"/>
+                                            <state key="normal" title="5 Ambient" backgroundImage="2-2.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="Yuc-Xk-83X" kind="show" id="grK-ic-7Gt"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiT-wb-U3e">
+                                            <rect key="frame" x="241" y="170" width="110" height="110"/>
+                                            <state key="normal" title="6 Diffuse" backgroundImage="2-2.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="OPW-Db-h00" kind="show" id="qP7-xZ-zok"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VN4-TJ-lGN">
+                                            <rect key="frame" x="8" y="288" width="110" height="110"/>
+                                            <state key="normal" title="7 Specular" backgroundImage="2-2.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="SgR-B4-gEG" kind="show" id="IgS-ck-YO8"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWF-0Z-xm0">
+                                            <rect key="frame" x="124" y="288" width="110" height="110"/>
+                                            <state key="normal" title="8 All" backgroundImage="2-2.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="JDy-36-QqK" kind="show" id="vbo-Ug-zAx"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jn9-SC-0cM">
+                                            <rect key="frame" x="241" y="288" width="110" height="110"/>
+                                            <state key="normal" title="9 Model" backgroundImage="2-2.png">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="ZEu-Ht-0Xb" kind="show" id="eNV-P1-izb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AmW-8p-5Qz">
+                                <rect key="frame" x="0.0" y="608" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Main" id="vbV-t4-HZC"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="WDw-QD-5NG" id="FCX-Uf-80z"/>
+                        </connections>
+                    </glkView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMn-nd-Gue" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341.5" y="294.5"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="2wz-hO-Evi">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="Vpt-IT-DnS" customClass="MatrixMovementViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ads-Ss-APr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ck9-ap-erF"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="6CS-84-Vyb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K1y-P6-2Mp">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Matrix Movement" id="Qpq-Gt-Kwz">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="bt2-er-0fE">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SZa-QT-HeQ">
+                                                <rect key="frame" x="237" y="563" width="35" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="WDw-QD-5NG" kind="show" id="0eg-HR-ZFU"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="Vpt-IT-DnS" id="3Gv-GY-cxD"/>
+                        </connections>
+                    </glkView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlQ-ma-6JU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.5" y="294.5"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="8Sj-kB-oEU">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="Vkc-wr-P1a" customClass="MatrixViewMatrixViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cMm-lg-5G3"/>
+                        <viewControllerLayoutGuide type="bottom" id="176-Nu-6Sv"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="7SV-2Y-Icq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JS0-xF-QDJ">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="View Matrix" id="arj-P5-NLH">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="QwQ-MS-SJM">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yVK-pA-CbA">
+                                                <rect key="frame" x="237" y="563" width="35" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="WDw-QD-5NG" kind="show" id="AEv-xA-giE"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="Vkc-wr-P1a" id="ZLs-BP-0qe"/>
+                        </connections>
+                    </glkView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Wj-FJ-kwv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.5" y="-521.5"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="bY9-OC-rfW">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="YyC-3m-8xO" customClass="MatrixPrjectionMatrixViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BxX-y1-X5B"/>
+                        <viewControllerLayoutGuide type="bottom" id="x1J-61-bHN"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="y04-9k-1Pz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWe-5N-VjN">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Projection Matrix" id="wOd-XC-ATB">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="jAq-GN-48z">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZoH-ik-HkQ">
+                                                <rect key="frame" x="237" y="563" width="35" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="WDw-QD-5NG" kind="show" id="41k-fi-6vL"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="YyC-3m-8xO" id="ReA-Vn-z6h"/>
+                        </connections>
+                    </glkView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43k-ux-Ow5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341.5" y="-521.5"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="qgV-D1-Z54">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="iqr-sr-cGy" customClass="TextureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eSF-DA-45J"/>
+                        <viewControllerLayoutGuide type="bottom" id="cUS-yf-kkJ"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="rfV-6e-7u6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZY5-ju-6Ou">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Texture" id="NEh-kw-HZh">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="Hkb-kU-b6f">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lKx-DF-cAx">
+                                                <rect key="frame" x="237" y="563" width="35" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="WDw-QD-5NG" kind="show" id="qo0-WU-dFR"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="iqr-sr-cGy" id="TKy-TS-0yr"/>
+                        </connections>
+                    </glkView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHy-0B-J6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84.5" y="-521.5"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="1g1-dI-NSl">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="Yuc-Xk-83X" customClass="AmbientViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XUj-Xr-hCb"/>
+                        <viewControllerLayoutGuide type="bottom" id="kgF-og-fih"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="Aua-fg-bUM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0AM-vO-2dp">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Ambient Lighting" id="5uo-eI-3Gc">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="W5h-hy-cV7">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PAF-0c-Mvg">
+                                                <rect key="frame" x="237" y="563" width="35" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="WDw-QD-5NG" kind="show" id="gSk-fx-HGD"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="Yuc-Xk-83X" id="fvn-l9-t61"/>
+                        </connections>
+                    </glkView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oA4-Mh-G5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-176.5" y="294.5"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="jWD-Mi-pTo">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="OPW-Db-h00" customClass="DiffuseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cvF-46-cE4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q4c-wp-mne"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="kBA-Mg-QO7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G9G-hg-Pu2">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Diffuse Lighting" id="ymU-Sj-3nA">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="cq1-ni-sK3">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UbH-Ru-Ui3">
+                                                <rect key="frame" x="237" y="563" width="35" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="WDw-QD-5NG" kind="show" id="pzX-50-oJ4"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="OPW-Db-h00" id="epQ-kh-2Co"/>
+                        </connections>
+                    </glkView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Amp-Zr-NPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-216.5" y="1142.5"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="Eai-jl-9GW">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="ZEu-Ht-0Xb" customClass="ModelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="91M-z5-0o4"/>
+                        <viewControllerLayoutGuide type="bottom" id="L2e-TP-vTA"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="wHW-ki-vga">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zib-Pg-WlJ">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Model" id="poR-nN-BMW">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="ixT-Rl-F9h">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="j7o-cJ-4te">
+                                                <rect key="frame" x="237" y="563" width="35" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="WDw-QD-5NG" kind="show" id="BGS-m0-67Y"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="ZEu-Ht-0Xb" id="xC1-J2-HBU"/>
+                        </connections>
+                    </glkView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jer-sN-MEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1255.5" y="294.5"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="tul-r3-c8Q">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="SgR-B4-gEG" customClass="SpecularViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cz9-oC-39w"/>
+                        <viewControllerLayoutGuide type="bottom" id="aGE-3f-1nj"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="fxe-4B-C8x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PY9-hH-yhx">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Specular Lighting" id="j7l-dr-2fR">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="3ON-ye-kY5">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fyR-cR-dXR">
+                                                <rect key="frame" x="237" y="563" width="35" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="WDw-QD-5NG" kind="show" id="AJB-Lz-OWV"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="SgR-B4-gEG" id="5Nb-Lj-hVj"/>
+                        </connections>
+                    </glkView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMw-UI-L9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341.5" y="1120.5"/>
+        </scene>
+        <!--GLKit View Controller-->
+        <scene sceneID="qBZ-fM-T9D">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="JDy-36-QqK" customClass="AllLightViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zs5-Oe-NXA"/>
+                        <viewControllerLayoutGuide type="bottom" id="AWh-43-lLO"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="zdW-sH-0lv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmN-ig-sfW">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="All Lighting" id="bRe-gb-JbH">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="K4Y-o4-hRM">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="98I-j7-cUZ">
+                                                <rect key="frame" x="237" y="563" width="35" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="WDw-QD-5NG" kind="show" id="YRe-YF-UUU"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="lVZ-tl-KVA">
+                                <rect key="frame" x="83" y="564" width="274" height="31"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label=""/>
+                                <connections>
+                                    <action selector="SliderAmbientSlided:" destination="JDy-36-QqK" eventType="valueChanged" id="Krh-Yy-E59"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ambient:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OK-Gz-qaj">
+                                <rect key="frame" x="8" y="568" width="69" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="9uA-SZ-1QA">
+                                <rect key="frame" x="83" y="530" width="274" height="31"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label=""/>
+                                <connections>
+                                    <action selector="SliderDiffuseSlided:" destination="JDy-36-QqK" eventType="valueChanged" id="esa-XM-zgR"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Diffuse:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIU-6x-aJQ">
+                                <rect key="frame" x="8" y="533" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="128" minValue="0.0" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="1MI-yy-gx1">
+                                <rect key="frame" x="83" y="492" width="274" height="31"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label=""/>
+                                <connections>
+                                    <action selector="SliderSpecularSlided:" destination="JDy-36-QqK" eventType="valueChanged" id="nZH-GT-ldk"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Specular:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OID-Vh-6t3">
+                                <rect key="frame" x="8" y="495" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mat int.:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w72-U1-9B9">
+                                <rect key="frame" x="8" y="457" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-30" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="Tzx-PZ-zVc">
+                                <rect key="frame" x="83" y="20" width="274" height="31"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label=""/>
+                                <connections>
+                                    <action selector="SliderLightDirectionSlided:" destination="JDy-36-QqK" eventType="valueChanged" id="O7J-Yt-Ns1"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Light X:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEE-NL-nRo">
+                                <rect key="frame" x="8" y="23" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-30" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="DJm-1w-saM">
+                                <rect key="frame" x="83" y="58" width="274" height="31"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label=""/>
+                                <connections>
+                                    <action selector="SliderLightDirectionSlided:" destination="JDy-36-QqK" eventType="valueChanged" id="sfv-xe-k7l"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Light Y:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKp-5x-XbY">
+                                <rect key="frame" x="8" y="61" width="58" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="-1" minValue="-30" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="8Hd-p4-18w">
+                                <rect key="frame" x="83" y="96" width="274" height="31"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label=""/>
+                                <connections>
+                                    <action selector="SliderLightDirectionSlided:" destination="JDy-36-QqK" eventType="valueChanged" id="e8L-1G-YA4"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Light Z:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIR-HJ-JJc">
+                                <rect key="frame" x="8" y="99" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="X:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLZ-bi-A6W">
+                                <rect key="frame" x="95" y="134" width="16" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVB-iY-5aI">
+                                <rect key="frame" x="119" y="134" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Y:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQl-60-yZJ">
+                                <rect key="frame" x="169" y="134" width="15" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEi-G1-Lts">
+                                <rect key="frame" x="193" y="134" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Z:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07b-4a-F27">
+                                <rect key="frame" x="243" y="134" width="16" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W92-ON-786">
+                                <rect key="frame" x="267" y="134" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="4zN-fh-D6q">
+                                <rect key="frame" x="83" y="454" width="274" height="31"/>
+                                <accessibility key="accessibilityConfiguration" hint="" label=""/>
+                                <connections>
+                                    <action selector="SlidermatSpecularIntensitySlided:" destination="JDy-36-QqK" eventType="valueChanged" id="Qh9-sN-mLB"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <connections>
+                            <outlet property="delegate" destination="JDy-36-QqK" id="PQC-FO-DtA"/>
+                        </connections>
+                    </glkView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="ambientSlider" destination="lVZ-tl-KVA" id="6Mo-fq-dfr"/>
+                        <outlet property="diffuseSlider" destination="9uA-SZ-1QA" id="32d-JT-JWe"/>
+                        <outlet property="labelLightX" destination="ZVB-iY-5aI" id="rAK-NJ-QaD"/>
+                        <outlet property="labelLightY" destination="SEi-G1-Lts" id="9wF-Hl-2O8"/>
+                        <outlet property="labelLightZ" destination="W92-ON-786" id="8th-cU-AUc"/>
+                        <outlet property="lightDirectionX" destination="Tzx-PZ-zVc" id="duD-Me-JN8"/>
+                        <outlet property="lightDirectionY" destination="DJm-1w-saM" id="Qxc-8l-8eM"/>
+                        <outlet property="lightDirectionZ" destination="8Hd-p4-18w" id="0R0-di-HWy"/>
+                        <outlet property="matSpecularIntensitySlider" destination="4zN-fh-D6q" id="p0W-XZ-OUv"/>
+                        <outlet property="specularSlider" destination="1MI-yy-gx1" id="E6g-cd-AVl"/>
+                    </connections>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hu7-kK-fie" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="805.5" y="1120.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2-1.png" width="487" height="801"/>
+        <image name="2-2.png" width="487" height="801"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="YRe-YF-UUU"/>
+    </inferredMetricsTieBreakers>
+</document>

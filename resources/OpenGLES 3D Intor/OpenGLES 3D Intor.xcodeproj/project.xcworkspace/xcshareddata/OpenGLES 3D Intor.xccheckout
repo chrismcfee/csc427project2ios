@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B79E866D-7C76-4FAF-95BB-ECFF5E41D987</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OpenGLES 3D Intor</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A6921C9158F9EE3FF15ED0759A3684F7420764F9</key>
+		<string>https://github.com/ggmethos/csc427project2ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>resources/OpenGLES 3D Intor/OpenGLES 3D Intor.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A6921C9158F9EE3FF15ED0759A3684F7420764F9</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ggmethos/csc427project2ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A6921C9158F9EE3FF15ED0759A3684F7420764F9</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A6921C9158F9EE3FF15ED0759A3684F7420764F9</string>
+			<key>IDESourceControlWCCName</key>
+			<string>csc427project2ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

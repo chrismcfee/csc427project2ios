@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE3D111D1AEECDAC002606DB /* stone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FE3D111C1AEECDAC002606DB /* stone.jpg */; };
+		FE3D111F1AEECE0F002606DB /* 2-2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3D111E1AEECE0F002606DB /* 2-2.png */; };
+		FE3D11751AF6B13E002606DB /* ParentGLKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3D11741AF6B13E002606DB /* ParentGLKViewController.m */; };
+		FE3D11781AF6B1CF002606DB /* AmbientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3D11771AF6B1CF002606DB /* AmbientViewController.m */; };
+		FE3D117A1AF6BF78002606DB /* SimpleAmbientFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FE3D11791AF6BF78002606DB /* SimpleAmbientFragment.glsl */; };
+		FE3D117D1AF6CCAB002606DB /* CubeNorm.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3D117C1AF6CCAB002606DB /* CubeNorm.m */; };
+		FE3D117F1AF6CE5B002606DB /* SimpleDiffuseVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FE3D117E1AF6CE5B002606DB /* SimpleDiffuseVertex.glsl */; };
+		FE3D11811AF6CE74002606DB /* SimpleDiffuseFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FE3D11801AF6CE74002606DB /* SimpleDiffuseFragment.glsl */; };
+		FE3D11841AF6CEAE002606DB /* DiffuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3D11831AF6CEAE002606DB /* DiffuseViewController.m */; };
+		FE3D11871AF6D5D3002606DB /* SpecularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3D11861AF6D5D3002606DB /* SpecularViewController.m */; };
+		FE3D11891AF6D69A002606DB /* SimpleSpecularVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FE3D11881AF6D69A002606DB /* SimpleSpecularVertex.glsl */; };
+		FE3D118B1AF6D6B5002606DB /* SimpleSpecularFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FE3D118A1AF6D6B5002606DB /* SimpleSpecularFragment.glsl */; };
+		FE3D118E1AF7082A002606DB /* AllLightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3D118D1AF7082A002606DB /* AllLightViewController.m */; };
+		FEF1B9031AED5130000260B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B9021AED5130000260B5 /* main.m */; };
+		FEF1B9061AED5130000260B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B9051AED5130000260B5 /* AppDelegate.m */; };
+		FEF1B9091AED5130000260B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B9081AED5130000260B5 /* ViewController.m */; };
+		FEF1B90C1AED5130000260B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B90A1AED5130000260B5 /* Main.storyboard */; };
+		FEF1B90E1AED5130000260B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B90D1AED5130000260B5 /* Images.xcassets */; };
+		FEF1B9111AED5130000260B5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B90F1AED5130000260B5 /* LaunchScreen.xib */; };
+		FEF1B91D1AED5130000260B5 /* OpenGLES_3D_IntorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B91C1AED5130000260B5 /* OpenGLES_3D_IntorTests.m */; };
+		FEF1B92B1AED518F000260B5 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B9281AED518F000260B5 /* MyModel.m */; };
+		FEF1B92C1AED518F000260B5 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B92A1AED518F000260B5 /* Square.m */; };
+		FEF1B93B1AED537D000260B5 /* MyGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B93A1AED537D000260B5 /* MyGlobal.m */; };
+		FEF1B9421AED53AF000260B5 /* RWTBaseEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B93D1AED53AF000260B5 /* RWTBaseEffect.m */; };
+		FEF1B9431AED53AF000260B5 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B93E1AED53AF000260B5 /* SimpleFragment.glsl */; };
+		FEF1B9441AED53AF000260B5 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B93F1AED53AF000260B5 /* SimpleVertex.glsl */; };
+		FEF1B9451AED53AF000260B5 /* SimpleVertexColor.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B9401AED53AF000260B5 /* SimpleVertexColor.glsl */; };
+		FEF1B9491AEDA707000260B5 /* SimpleModelVertexColor.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B9481AEDA707000260B5 /* SimpleModelVertexColor.glsl */; };
+		FEF1B9501AEDADE1000260B5 /* MatrixMovementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B94F1AEDADE1000260B5 /* MatrixMovementViewController.m */; };
+		FEF1B9521AEDB506000260B5 /* 2-1.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B9511AEDB506000260B5 /* 2-1.png */; };
+		FEF1B9561AEDB586000260B5 /* MatrixViewMatrixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B9551AEDB586000260B5 /* MatrixViewMatrixViewController.m */; };
+		FEF1B9581AEDB7A9000260B5 /* SimpleWVPVertexColor.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B9571AEDB7A9000260B5 /* SimpleWVPVertexColor.glsl */; };
+		FEF1B95C1AEDC208000260B5 /* MatrixPrjectionMatrixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B95B1AEDC208000260B5 /* MatrixPrjectionMatrixViewController.m */; };
+		FEF1B95F1AEDC655000260B5 /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B95E1AEDC655000260B5 /* Cube.m */; };
+		FEF1B9621AEE9EA6000260B5 /* CubeT.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B9611AEE9EA6000260B5 /* CubeT.m */; };
+		FEF1B9641AEEA94F000260B5 /* SimpleVertexTexture.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B9631AEEA94F000260B5 /* SimpleVertexTexture.glsl */; };
+		FEF1B9661AEEAEBF000260B5 /* SimpleTextureFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = FEF1B9651AEEAEBF000260B5 /* SimpleTextureFragment.glsl */; };
+		FEF1B96A1AEEAF88000260B5 /* TextureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF1B9691AEEAF88000260B5 /* TextureViewController.m */; };
+		FEF5E3A31AFAD9F300B5BF95 /* ModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF5E3A21AFAD9F300B5BF95 /* ModelViewController.m */; };
+		FEF5E3AF1AFADDAB00B5BF95 /* MyMushroomObj.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF5E3AE1AFADDAB00B5BF95 /* MyMushroomObj.m */; };
+		FEF5E3B31AFADF2F00B5BF95 /* mushroom.png in Resources */ = {isa = PBXBuildFile; fileRef = FEF5E3B01AFADF2F00B5BF95 /* mushroom.png */; };
+		FEF5E3B41AFADF2F00B5BF95 /* mushrooms.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF5E3B21AFADF2F00B5BF95 /* mushrooms.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEF1B9171AED5130000260B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEF1B8F51AED5130000260B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF1B8FC1AED5130000260B5;
+			remoteInfo = "OpenGLES 3D Intor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE3D111C1AEECDAC002606DB /* stone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stone.jpg; sourceTree = "<group>"; };
+		FE3D111E1AEECE0F002606DB /* 2-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-2.png"; sourceTree = "<group>"; };
+		FE3D11731AF6B13E002606DB /* ParentGLKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ParentGLKViewController.h; path = Views/ParentGLKViewController.h; sourceTree = "<group>"; };
+		FE3D11741AF6B13E002606DB /* ParentGLKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ParentGLKViewController.m; path = Views/ParentGLKViewController.m; sourceTree = "<group>"; };
+		FE3D11761AF6B1CF002606DB /* AmbientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmbientViewController.h; sourceTree = "<group>"; };
+		FE3D11771AF6B1CF002606DB /* AmbientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmbientViewController.m; sourceTree = "<group>"; };
+		FE3D11791AF6BF78002606DB /* SimpleAmbientFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleAmbientFragment.glsl; path = Shaders/SimpleAmbientFragment.glsl; sourceTree = "<group>"; };
+		FE3D117B1AF6CCAB002606DB /* CubeNorm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeNorm.h; sourceTree = "<group>"; };
+		FE3D117C1AF6CCAB002606DB /* CubeNorm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeNorm.m; sourceTree = "<group>"; };
+		FE3D117E1AF6CE5B002606DB /* SimpleDiffuseVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleDiffuseVertex.glsl; path = Shaders/SimpleDiffuseVertex.glsl; sourceTree = "<group>"; };
+		FE3D11801AF6CE74002606DB /* SimpleDiffuseFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleDiffuseFragment.glsl; path = Shaders/SimpleDiffuseFragment.glsl; sourceTree = "<group>"; };
+		FE3D11821AF6CEAE002606DB /* DiffuseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiffuseViewController.h; path = Views/DiffuseViewController.h; sourceTree = "<group>"; };
+		FE3D11831AF6CEAE002606DB /* DiffuseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiffuseViewController.m; path = Views/DiffuseViewController.m; sourceTree = "<group>"; };
+		FE3D11851AF6D5D3002606DB /* SpecularViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpecularViewController.h; path = Views/SpecularViewController.h; sourceTree = "<group>"; };
+		FE3D11861AF6D5D3002606DB /* SpecularViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpecularViewController.m; path = Views/SpecularViewController.m; sourceTree = "<group>"; };
+		FE3D11881AF6D69A002606DB /* SimpleSpecularVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleSpecularVertex.glsl; path = Shaders/SimpleSpecularVertex.glsl; sourceTree = "<group>"; };
+		FE3D118A1AF6D6B5002606DB /* SimpleSpecularFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleSpecularFragment.glsl; path = Shaders/SimpleSpecularFragment.glsl; sourceTree = "<group>"; };
+		FE3D118C1AF7082A002606DB /* AllLightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AllLightViewController.h; path = Views/AllLightViewController.h; sourceTree = "<group>"; };
+		FE3D118D1AF7082A002606DB /* AllLightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AllLightViewController.m; path = Views/AllLightViewController.m; sourceTree = "<group>"; };
+		FEF1B8FD1AED5130000260B5 /* OpenGLES 3D Intor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenGLES 3D Intor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF1B9011AED5130000260B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF1B9021AED5130000260B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEF1B9041AED5130000260B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEF1B9051AED5130000260B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEF1B9071AED5130000260B5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FEF1B9081AED5130000260B5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FEF1B90B1AED5130000260B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEF1B90D1AED5130000260B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FEF1B9101AED5130000260B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FEF1B9161AED5130000260B5 /* OpenGLES 3D IntorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenGLES 3D IntorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF1B91B1AED5130000260B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF1B91C1AED5130000260B5 /* OpenGLES_3D_IntorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLES_3D_IntorTests.m; sourceTree = "<group>"; };
+		FEF1B9271AED518F000260B5 /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
+		FEF1B9281AED518F000260B5 /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
+		FEF1B9291AED518F000260B5 /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		FEF1B92A1AED518F000260B5 /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		FEF1B9391AED537D000260B5 /* MyGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyGlobal.h; path = "Global Classes and Functions/MyGlobal.h"; sourceTree = "<group>"; };
+		FEF1B93A1AED537D000260B5 /* MyGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyGlobal.m; path = "Global Classes and Functions/MyGlobal.m"; sourceTree = "<group>"; };
+		FEF1B93C1AED53AF000260B5 /* RWTBaseEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTBaseEffect.h; path = Shaders/RWTBaseEffect.h; sourceTree = "<group>"; };
+		FEF1B93D1AED53AF000260B5 /* RWTBaseEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTBaseEffect.m; path = Shaders/RWTBaseEffect.m; sourceTree = "<group>"; };
+		FEF1B93E1AED53AF000260B5 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = Shaders/SimpleFragment.glsl; sourceTree = "<group>"; };
+		FEF1B93F1AED53AF000260B5 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = Shaders/SimpleVertex.glsl; sourceTree = "<group>"; };
+		FEF1B9401AED53AF000260B5 /* SimpleVertexColor.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertexColor.glsl; path = Shaders/SimpleVertexColor.glsl; sourceTree = "<group>"; };
+		FEF1B9411AED53AF000260B5 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vertex.h; path = Shaders/Vertex.h; sourceTree = "<group>"; };
+		FEF1B9481AEDA707000260B5 /* SimpleModelVertexColor.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleModelVertexColor.glsl; path = Shaders/SimpleModelVertexColor.glsl; sourceTree = "<group>"; };
+		FEF1B94E1AEDADE1000260B5 /* MatrixMovementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatrixMovementViewController.h; path = "Matrix Movement View Controller/MatrixMovementViewController.h"; sourceTree = "<group>"; };
+		FEF1B94F1AEDADE1000260B5 /* MatrixMovementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MatrixMovementViewController.m; path = "Matrix Movement View Controller/MatrixMovementViewController.m"; sourceTree = "<group>"; };
+		FEF1B9511AEDB506000260B5 /* 2-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-1.png"; sourceTree = "<group>"; };
+		FEF1B9541AEDB586000260B5 /* MatrixViewMatrixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatrixViewMatrixViewController.h; path = "Matrix ViewMatrix View Controller/MatrixViewMatrixViewController.h"; sourceTree = "<group>"; };
+		FEF1B9551AEDB586000260B5 /* MatrixViewMatrixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MatrixViewMatrixViewController.m; path = "Matrix ViewMatrix View Controller/MatrixViewMatrixViewController.m"; sourceTree = "<group>"; };
+		FEF1B9571AEDB7A9000260B5 /* SimpleWVPVertexColor.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleWVPVertexColor.glsl; path = Shaders/SimpleWVPVertexColor.glsl; sourceTree = "<group>"; };
+		FEF1B95A1AEDC208000260B5 /* MatrixPrjectionMatrixViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MatrixPrjectionMatrixViewController.h; path = "Matrix Projection Matrix View Controller/MatrixPrjectionMatrixViewController.h"; sourceTree = "<group>"; };
+		FEF1B95B1AEDC208000260B5 /* MatrixPrjectionMatrixViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MatrixPrjectionMatrixViewController.m; path = "Matrix Projection Matrix View Controller/MatrixPrjectionMatrixViewController.m"; sourceTree = "<group>"; };
+		FEF1B95D1AEDC655000260B5 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		FEF1B95E1AEDC655000260B5 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
+		FEF1B9601AEE9EA6000260B5 /* CubeT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeT.h; sourceTree = "<group>"; };
+		FEF1B9611AEE9EA6000260B5 /* CubeT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeT.m; sourceTree = "<group>"; };
+		FEF1B9631AEEA94F000260B5 /* SimpleVertexTexture.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertexTexture.glsl; path = Shaders/SimpleVertexTexture.glsl; sourceTree = "<group>"; };
+		FEF1B9651AEEAEBF000260B5 /* SimpleTextureFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleTextureFragment.glsl; path = Shaders/SimpleTextureFragment.glsl; sourceTree = "<group>"; };
+		FEF1B9681AEEAF88000260B5 /* TextureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextureViewController.h; path = "Texture View Controller/TextureViewController.h"; sourceTree = "<group>"; };
+		FEF1B9691AEEAF88000260B5 /* TextureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextureViewController.m; path = "Texture View Controller/TextureViewController.m"; sourceTree = "<group>"; };
+		FEF5E3A11AFAD9F300B5BF95 /* ModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelViewController.h; path = Views/ModelViewController.h; sourceTree = "<group>"; };
+		FEF5E3A21AFAD9F300B5BF95 /* ModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ModelViewController.m; path = Views/ModelViewController.m; sourceTree = "<group>"; };
+		FEF5E3AD1AFADDAB00B5BF95 /* MyMushroomObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMushroomObj.h; sourceTree = "<group>"; };
+		FEF5E3AE1AFADDAB00B5BF95 /* MyMushroomObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMushroomObj.m; sourceTree = "<group>"; };
+		FEF5E3B01AFADF2F00B5BF95 /* mushroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mushroom.png; path = Mushrooms/mushroom.png; sourceTree = "<group>"; };
+		FEF5E3B11AFADF2F00B5BF95 /* mushrooms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mushrooms.h; path = Mushrooms/mushrooms.h; sourceTree = "<group>"; };
+		FEF5E3B21AFADF2F00B5BF95 /* mushrooms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = mushrooms.m; path = Mushrooms/mushrooms.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEF1B8FA1AED5130000260B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF1B9131AED5130000260B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE3D11721AF6B113002606DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE3D11731AF6B13E002606DB /* ParentGLKViewController.h */,
+				FE3D11741AF6B13E002606DB /* ParentGLKViewController.m */,
+				FE3D11761AF6B1CF002606DB /* AmbientViewController.h */,
+				FE3D11771AF6B1CF002606DB /* AmbientViewController.m */,
+				FE3D11821AF6CEAE002606DB /* DiffuseViewController.h */,
+				FE3D11831AF6CEAE002606DB /* DiffuseViewController.m */,
+				FE3D11851AF6D5D3002606DB /* SpecularViewController.h */,
+				FE3D11861AF6D5D3002606DB /* SpecularViewController.m */,
+				FE3D118C1AF7082A002606DB /* AllLightViewController.h */,
+				FE3D118D1AF7082A002606DB /* AllLightViewController.m */,
+				FEF5E3A11AFAD9F300B5BF95 /* ModelViewController.h */,
+				FEF5E3A21AFAD9F300B5BF95 /* ModelViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FEF1B8F41AED5130000260B5 = {
+			isa = PBXGroup;
+			children = (
+				FEF5E3A41AFAD9F600B5BF95 /* Mushroom */,
+				FE3D11721AF6B113002606DB /* Views */,
+				FEF1B9671AEEAF4D000260B5 /* Texture View Controller */,
+				FEF1B9591AEDC1A1000260B5 /* Matrix Projection Matrix View Controller */,
+				FEF1B9531AEDB533000260B5 /* Matrix ViewMatrix View Controller */,
+				FEF1B94D1AEDAD93000260B5 /* Matrix Movement View Controller */,
+				FEF1B94A1AEDACDD000260B5 /* Images */,
+				FEF1B9381AED532C000260B5 /* Global Classes and Functions */,
+				FEF1B9371AED529F000260B5 /* Shaders */,
+				FEF1B9261AED518F000260B5 /* Model Class */,
+				FEF1B8FF1AED5130000260B5 /* OpenGLES 3D Intor */,
+				FEF1B9191AED5130000260B5 /* OpenGLES 3D IntorTests */,
+				FEF1B8FE1AED5130000260B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEF1B8FE1AED5130000260B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B8FD1AED5130000260B5 /* OpenGLES 3D Intor.app */,
+				FEF1B9161AED5130000260B5 /* OpenGLES 3D IntorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEF1B8FF1AED5130000260B5 /* OpenGLES 3D Intor */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B9041AED5130000260B5 /* AppDelegate.h */,
+				FEF1B9051AED5130000260B5 /* AppDelegate.m */,
+				FEF1B9071AED5130000260B5 /* ViewController.h */,
+				FEF1B9081AED5130000260B5 /* ViewController.m */,
+				FEF1B90A1AED5130000260B5 /* Main.storyboard */,
+				FEF1B90D1AED5130000260B5 /* Images.xcassets */,
+				FEF1B90F1AED5130000260B5 /* LaunchScreen.xib */,
+				FEF1B9001AED5130000260B5 /* Supporting Files */,
+			);
+			path = "OpenGLES 3D Intor";
+			sourceTree = "<group>";
+		};
+		FEF1B9001AED5130000260B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B9011AED5130000260B5 /* Info.plist */,
+				FEF1B9021AED5130000260B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEF1B9191AED5130000260B5 /* OpenGLES 3D IntorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B91C1AED5130000260B5 /* OpenGLES_3D_IntorTests.m */,
+				FEF1B91A1AED5130000260B5 /* Supporting Files */,
+			);
+			path = "OpenGLES 3D IntorTests";
+			sourceTree = "<group>";
+		};
+		FEF1B91A1AED5130000260B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B91B1AED5130000260B5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEF1B9261AED518F000260B5 /* Model Class */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B9271AED518F000260B5 /* MyModel.h */,
+				FEF1B9281AED518F000260B5 /* MyModel.m */,
+				FEF1B9291AED518F000260B5 /* Square.h */,
+				FEF1B92A1AED518F000260B5 /* Square.m */,
+				FEF1B95D1AEDC655000260B5 /* Cube.h */,
+				FEF1B95E1AEDC655000260B5 /* Cube.m */,
+				FEF1B9601AEE9EA6000260B5 /* CubeT.h */,
+				FEF1B9611AEE9EA6000260B5 /* CubeT.m */,
+				FE3D117B1AF6CCAB002606DB /* CubeNorm.h */,
+				FE3D117C1AF6CCAB002606DB /* CubeNorm.m */,
+				FEF5E3AD1AFADDAB00B5BF95 /* MyMushroomObj.h */,
+				FEF5E3AE1AFADDAB00B5BF95 /* MyMushroomObj.m */,
+			);
+			path = "Model Class";
+			sourceTree = "<group>";
+		};
+		FEF1B9371AED529F000260B5 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B93C1AED53AF000260B5 /* RWTBaseEffect.h */,
+				FEF1B93D1AED53AF000260B5 /* RWTBaseEffect.m */,
+				FEF1B93E1AED53AF000260B5 /* SimpleFragment.glsl */,
+				FEF1B93F1AED53AF000260B5 /* SimpleVertex.glsl */,
+				FEF1B9401AED53AF000260B5 /* SimpleVertexColor.glsl */,
+				FEF1B9411AED53AF000260B5 /* Vertex.h */,
+				FEF1B9481AEDA707000260B5 /* SimpleModelVertexColor.glsl */,
+				FEF1B9571AEDB7A9000260B5 /* SimpleWVPVertexColor.glsl */,
+				FEF1B9631AEEA94F000260B5 /* SimpleVertexTexture.glsl */,
+				FEF1B9651AEEAEBF000260B5 /* SimpleTextureFragment.glsl */,
+				FE3D11791AF6BF78002606DB /* SimpleAmbientFragment.glsl */,
+				FE3D117E1AF6CE5B002606DB /* SimpleDiffuseVertex.glsl */,
+				FE3D11801AF6CE74002606DB /* SimpleDiffuseFragment.glsl */,
+				FE3D11881AF6D69A002606DB /* SimpleSpecularVertex.glsl */,
+				FE3D118A1AF6D6B5002606DB /* SimpleSpecularFragment.glsl */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		FEF1B9381AED532C000260B5 /* Global Classes and Functions */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B9391AED537D000260B5 /* MyGlobal.h */,
+				FEF1B93A1AED537D000260B5 /* MyGlobal.m */,
+			);
+			name = "Global Classes and Functions";
+			sourceTree = "<group>";
+		};
+		FEF1B94A1AEDACDD000260B5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FE3D111E1AEECE0F002606DB /* 2-2.png */,
+				FE3D111C1AEECDAC002606DB /* stone.jpg */,
+				FEF1B9511AEDB506000260B5 /* 2-1.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		FEF1B94D1AEDAD93000260B5 /* Matrix Movement View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B94E1AEDADE1000260B5 /* MatrixMovementViewController.h */,
+				FEF1B94F1AEDADE1000260B5 /* MatrixMovementViewController.m */,
+			);
+			name = "Matrix Movement View Controller";
+			sourceTree = "<group>";
+		};
+		FEF1B9531AEDB533000260B5 /* Matrix ViewMatrix View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B9541AEDB586000260B5 /* MatrixViewMatrixViewController.h */,
+				FEF1B9551AEDB586000260B5 /* MatrixViewMatrixViewController.m */,
+			);
+			name = "Matrix ViewMatrix View Controller";
+			sourceTree = "<group>";
+		};
+		FEF1B9591AEDC1A1000260B5 /* Matrix Projection Matrix View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B95A1AEDC208000260B5 /* MatrixPrjectionMatrixViewController.h */,
+				FEF1B95B1AEDC208000260B5 /* MatrixPrjectionMatrixViewController.m */,
+			);
+			name = "Matrix Projection Matrix View Controller";
+			sourceTree = "<group>";
+		};
+		FEF1B9671AEEAF4D000260B5 /* Texture View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FEF1B9681AEEAF88000260B5 /* TextureViewController.h */,
+				FEF1B9691AEEAF88000260B5 /* TextureViewController.m */,
+			);
+			name = "Texture View Controller";
+			sourceTree = "<group>";
+		};
+		FEF5E3A41AFAD9F600B5BF95 /* Mushroom */ = {
+			isa = PBXGroup;
+			children = (
+				FEF5E3B01AFADF2F00B5BF95 /* mushroom.png */,
+				FEF5E3B11AFADF2F00B5BF95 /* mushrooms.h */,
+				FEF5E3B21AFADF2F00B5BF95 /* mushrooms.m */,
+			);
+			name = Mushroom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEF1B8FC1AED5130000260B5 /* OpenGLES 3D Intor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF1B9201AED5130000260B5 /* Build configuration list for PBXNativeTarget "OpenGLES 3D Intor" */;
+			buildPhases = (
+				FEF1B8F91AED5130000260B5 /* Sources */,
+				FEF1B8FA1AED5130000260B5 /* Frameworks */,
+				FEF1B8FB1AED5130000260B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenGLES 3D Intor";
+			productName = "OpenGLES 3D Intor";
+			productReference = FEF1B8FD1AED5130000260B5 /* OpenGLES 3D Intor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEF1B9151AED5130000260B5 /* OpenGLES 3D IntorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF1B9231AED5130000260B5 /* Build configuration list for PBXNativeTarget "OpenGLES 3D IntorTests" */;
+			buildPhases = (
+				FEF1B9121AED5130000260B5 /* Sources */,
+				FEF1B9131AED5130000260B5 /* Frameworks */,
+				FEF1B9141AED5130000260B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEF1B9181AED5130000260B5 /* PBXTargetDependency */,
+			);
+			name = "OpenGLES 3D IntorTests";
+			productName = "OpenGLES 3D IntorTests";
+			productReference = FEF1B9161AED5130000260B5 /* OpenGLES 3D IntorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEF1B8F51AED5130000260B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Elhassan Ahmed";
+				TargetAttributes = {
+					FEF1B8FC1AED5130000260B5 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					FEF1B9151AED5130000260B5 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = FEF1B8FC1AED5130000260B5;
+					};
+				};
+			};
+			buildConfigurationList = FEF1B8F81AED5130000260B5 /* Build configuration list for PBXProject "OpenGLES 3D Intor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEF1B8F41AED5130000260B5;
+			productRefGroup = FEF1B8FE1AED5130000260B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEF1B8FC1AED5130000260B5 /* OpenGLES 3D Intor */,
+				FEF1B9151AED5130000260B5 /* OpenGLES 3D IntorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEF1B8FB1AED5130000260B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3D111F1AEECE0F002606DB /* 2-2.png in Resources */,
+				FEF5E3B31AFADF2F00B5BF95 /* mushroom.png in Resources */,
+				FEF1B9661AEEAEBF000260B5 /* SimpleTextureFragment.glsl in Resources */,
+				FEF1B9491AEDA707000260B5 /* SimpleModelVertexColor.glsl in Resources */,
+				FEF1B9641AEEA94F000260B5 /* SimpleVertexTexture.glsl in Resources */,
+				FEF1B90C1AED5130000260B5 /* Main.storyboard in Resources */,
+				FE3D111D1AEECDAC002606DB /* stone.jpg in Resources */,
+				FEF1B9581AEDB7A9000260B5 /* SimpleWVPVertexColor.glsl in Resources */,
+				FE3D11891AF6D69A002606DB /* SimpleSpecularVertex.glsl in Resources */,
+				FEF1B9441AED53AF000260B5 /* SimpleVertex.glsl in Resources */,
+				FEF1B9431AED53AF000260B5 /* SimpleFragment.glsl in Resources */,
+				FEF1B9451AED53AF000260B5 /* SimpleVertexColor.glsl in Resources */,
+				FEF1B9521AEDB506000260B5 /* 2-1.png in Resources */,
+				FE3D118B1AF6D6B5002606DB /* SimpleSpecularFragment.glsl in Resources */,
+				FEF1B9111AED5130000260B5 /* LaunchScreen.xib in Resources */,
+				FE3D117A1AF6BF78002606DB /* SimpleAmbientFragment.glsl in Resources */,
+				FEF1B90E1AED5130000260B5 /* Images.xcassets in Resources */,
+				FE3D11811AF6CE74002606DB /* SimpleDiffuseFragment.glsl in Resources */,
+				FE3D117F1AF6CE5B002606DB /* SimpleDiffuseVertex.glsl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF1B9141AED5130000260B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEF1B8F91AED5130000260B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE3D117D1AF6CCAB002606DB /* CubeNorm.m in Sources */,
+				FEF1B95F1AEDC655000260B5 /* Cube.m in Sources */,
+				FEF5E3AF1AFADDAB00B5BF95 /* MyMushroomObj.m in Sources */,
+				FEF1B9501AEDADE1000260B5 /* MatrixMovementViewController.m in Sources */,
+				FEF1B96A1AEEAF88000260B5 /* TextureViewController.m in Sources */,
+				FEF1B9091AED5130000260B5 /* ViewController.m in Sources */,
+				FEF1B9561AEDB586000260B5 /* MatrixViewMatrixViewController.m in Sources */,
+				FEF1B93B1AED537D000260B5 /* MyGlobal.m in Sources */,
+				FEF1B9061AED5130000260B5 /* AppDelegate.m in Sources */,
+				FE3D11751AF6B13E002606DB /* ParentGLKViewController.m in Sources */,
+				FE3D118E1AF7082A002606DB /* AllLightViewController.m in Sources */,
+				FEF5E3B41AFADF2F00B5BF95 /* mushrooms.m in Sources */,
+				FEF1B95C1AEDC208000260B5 /* MatrixPrjectionMatrixViewController.m in Sources */,
+				FE3D11841AF6CEAE002606DB /* DiffuseViewController.m in Sources */,
+				FEF1B9031AED5130000260B5 /* main.m in Sources */,
+				FEF1B92C1AED518F000260B5 /* Square.m in Sources */,
+				FE3D11871AF6D5D3002606DB /* SpecularViewController.m in Sources */,
+				FE3D11781AF6B1CF002606DB /* AmbientViewController.m in Sources */,
+				FEF5E3A31AFAD9F300B5BF95 /* ModelViewController.m in Sources */,
+				FEF1B9621AEE9EA6000260B5 /* CubeT.m in Sources */,
+				FEF1B92B1AED518F000260B5 /* MyModel.m in Sources */,
+				FEF1B9421AED53AF000260B5 /* RWTBaseEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF1B9121AED5130000260B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEF1B91D1AED5130000260B5 /* OpenGLES_3D_IntorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEF1B9181AED5130000260B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF1B8FC1AED5130000260B5 /* OpenGLES 3D Intor */;
+			targetProxy = FEF1B9171AED5130000260B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEF1B90A1AED5130000260B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEF1B90B1AED5130000260B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEF1B90F1AED5130000260B5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEF1B9101AED5130000260B5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEF1B91E1AED5130000260B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEF1B91F1AED5130000260B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEF1B9211AED5130000260B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "OpenGLES 3D Intor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FEF1B9221AED5130000260B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "OpenGLES 3D Intor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FEF1B9241AED5130000260B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OpenGLES 3D IntorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLES 3D Intor.app/OpenGLES 3D Intor";
+			};
+			name = Debug;
+		};
+		FEF1B9251AED5130000260B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OpenGLES 3D IntorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGLES 3D Intor.app/OpenGLES 3D Intor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEF1B8F81AED5130000260B5 /* Build configuration list for PBXProject "OpenGLES 3D Intor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF1B91E1AED5130000260B5 /* Debug */,
+				FEF1B91F1AED5130000260B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF1B9201AED5130000260B5 /* Build configuration list for PBXNativeTarget "OpenGLES 3D Intor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF1B9211AED5130000260B5 /* Debug */,
+				FEF1B9221AED5130000260B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF1B9231AED5130000260B5 /* Build configuration list for PBXNativeTarget "OpenGLES 3D IntorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF1B9241AED5130000260B5 /* Debug */,
+				FEF1B9251AED5130000260B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEF1B8F51AED5130000260B5 /* Project object */;
+}
